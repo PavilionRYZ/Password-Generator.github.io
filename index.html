@@ -8,66 +8,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <div class="wrapper"><!-- wrapper container  -->
+
     
-     <div class="container">
-        <h1>Password Generator</h1>
-        <div class="display-container">
+    <div class="container"><!--second container  -->
 
-             <input readonly placeholder="Password" class="display" data-passwordDisplay>
+         <h1>Password Generator</h1> 
+         <div class="display-container"> <!-- display container  -->
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
 
-             <button data-copy>
-                <span data-copyMsg></span>
+            <button class="copyBtn" data-copy> 
+                <span class="tooltip" data-copyMsg></span>
                 <i class="fa-solid fa-copy"></i>
-             </button>
+            </button>
+        </div><!-- display container  -->
 
-        </div>
 
-        <div class="input-container">
-            <div class="length-container">
-                <p>Password Length</p>
-                <p data-lengthNumber>0</p>
+        <div class="input-container"> <!-- input container  -->
+
+            <div class="length-container"> <!-- length container  -->
+                
+            <p>Password Length</p>
+            <p data-lengthNumber>0</p>
+            </div><!-- length container  -->
+          <input type="range" min="1" max="20" class="slider" step="1" id="" data-lengthSlider>
+            <!-- check boxes -->
+         <div class="checkbox"><!-- uppercase -->
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include Uppercase Letters</label>
             </div>
-                <!-- slider  -->
-            <input type="range" min="1" max="20" class="slider" step="1" datalengthSlider>
-
-            <!-- checkboxes -->
-                <!-- upppercase -->
-            <div>
-                <input type="checkbox" id="upppercase">
-                <label for="upppercase">Includes Upppercase Letters</label>
-            </div>
-                <!-- lowercase -->
-            <div>
+            <div class="checkbox"><!-- Lowercase -->
                 <input type="checkbox" id="lowercase">
-                <label for="lowercase">Includes Lowercase Letters</label>
+                <label for="lowercase">Include Lowercase Letters</label>
             </div>
-               <!-- numbers -->
-            <div>
+            <div class="checkbox"><!-- Numbers -->
                 <input type="checkbox" id="numbers">
-                <label for="numbers">Includes Numbers</label>
+                <label for="numbers">Include Numbers</label>
             </div>
-              <!-- symbols -->
-            <div>
+            <div class="checkbox"><!-- Symbols -->
                 <input type="checkbox" id="symbols">
-                <label for="symbols">Includes Symbols</label>
+                <label for="symbols">Include Symbols</label>
+            </div>
+            
+            <div class="strength-container"><!-- strength -->
+            <p>Strength</p>
+            <div class="indicator" data-indicator></div>
             </div>
 
-            <!-- strength seection -->
-            <div class="strength-container">
-                <p>Strength</p>
-                <div data-indicator class=""></div>
-            </div>
+            <!-- generate Password -->
+            <button class="generateButton">Generate password</button>
 
-            <!-- generate passsword -->
-            <button class="generateButton">Generate Password</button>
-
-        </div>
-
-     </div>
+        </div><!-- input container  -->
+    </div><!-- second container  -->
 
 
-
+    </div><!-- !-- wrapper container  -->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/6cf2338f11.js" crossorigin="anonymous"></script>
 </body>
 </html>
+<!-- old  -->
