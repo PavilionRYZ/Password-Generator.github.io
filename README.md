@@ -7,7 +7,9 @@ This is a simple web application that generates random passwords based on user p
 Features{ }
 
 <>Generates a random password based on user preferences.
+
 <>Allows the user to select the password length and the types of characters to include (lowercase letters, uppercase letters, numbers, and special characters).
+
 <>Provides a copy-to-clipboard functionality for easy password sharing.
 
 Getting Started{ }
