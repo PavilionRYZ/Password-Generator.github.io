@@ -20,6 +20,7 @@ If you want to run the application locally, you can follow these steps:
 
 1.Clone the repository to your local machine:
                    git clone [insert repository URL]
+                   
 2.Open the index.html file in your preferred browser.
 
 3.Customize the password length and character preferences using the options provided.
